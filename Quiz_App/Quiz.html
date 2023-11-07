@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+</head>
+<body>
+    Q1. What is Blockchain?<br>
+    <input type = "radio" name="question1">Hoax<br>
+    <input type = "radio" name="question1" id="correct1">Expanded P2P<br>
+    <input type = "radio" name="question1">Magical Technology<br>
+    <input type = "radio" name="question1">Cryptocurrency<br>
+
+    Q2. What is P2P?<br>
+    <input type = "radio" name="question2" id="correct2">Network Topology<br>
+    <input type = "radio" name="question2">Network Protocol<br>
+    <input type = "radio" name="question2">Parsing Technique<br>
+    <input type = "radio" name="question2">Cryprographic Technique<br>
+
+    Q3. In which field HTML and Javascript are used ?<br>
+    <input type = "radio" name="question3">Blockchain Development<br>
+    <input type = "radio" name="question3" id="correct3">Web Development<br>
+    <input type = "radio" name="question3">App Development<br>
+    <input type = "radio" name="question3">IoS Development<br>
+
+
+    <input type="submit" name="submit" value="submitQuiz" onclick="result()">
+    <script type="text/javascript">
+        function result() {
+            
+            var score=0;
+            if (document.getElementById('correct1').checked)
+            {
+                score++;
+            }
+            if (document.getElementById('correct2').checked)
+            {
+                score++;
+            }
+            if (document.getElementById('correct3').checked)
+            {
+                score++;
+            }
+            document.write("Your score is:"+score)
+
+        }
+    </script>
+    
+
+</body>
+</html>
